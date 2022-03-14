@@ -1,0 +1,45 @@
+body {
+    background:peachpuff;
+}
+
+.container {
+    height:500px;
+    background:black;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+section {
+    height:75px;
+    width:100%;
+    background: yellow;
+    margin:1px;
+}
+
+@media screen and (min-width:425px){
+    .container {
+        flex-direction:row;
+    }
+    section {
+        width:75px;
+    }
+}
+
+@media screen and (min-width:625px){
+
+    section {
+        width:150px;
+        background:green;
+    }
+}
+
+@media screen and (min-width:625px) and (max-width:865px){
+
+    section {
+        width:150px;
+        background:pink;
+    }
+}
+
